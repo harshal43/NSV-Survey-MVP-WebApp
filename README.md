@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🛠️ NSV Admin Panel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based **Admin Dashboard** for the NSV Highway Inspection App. Built with **React**, this panel enables supervisors and project managers to monitor, and analyze highway inspection data submitted via the mobile app.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧰 Features
 
-### `npm start`
+- 📊 **Dashboard Overview** – Real-time inspection data & summary widgets
+- 🗺️ **Map View** – Visualize inspection locations on an interactive map
+- 🧾 **Detailed Reports** – View geo-tagged reports with media attachments
+- 📦 **Project & Package Tracking** – Track progress by package or region
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### 1. **Install Dependencies**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+# or
+yarn
 
-### `npm run build`
+2. Start Development Server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run dev
+# or
+yarn dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will run at: http://localhost:3000
+⚙️ Tech Stack
+Tech	Purpose
+React (Vite/CRA)	Frontend framework
+Tailwind CSS	Utility-first styling
+React Router	SPA routing
+Axios	API communication
+React Leaflet / Maps	Map visualization
+Zustand / Redux	State management
+React Query (optional)	Server-state & caching
+TanStack Table	Table rendering & filtering
+📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+/src
+  /components         # Reusable UI elements (tables, modals, buttons)
+  /pages              # Route-based views (Dashboard, Users, Reports)
+  /hooks              # Custom React hooks
+  /services           # API call functions
+  /store              # State management (e.g. Zustand/Redux)
+  /assets             # Icons, images, logos
+  /utils              # Formatters, validators, helpers
 
-### `npm run eject`
+🔑 Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a .env file in the root:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+REACT_APP_PUBLIC_API_URL=backend_api_url
+REACT_APP_ENV=dev
+REACT_APP_GOOGLE_API_KEY=your_google_api_key_here
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Make sure these are injected correctly for deployment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+🚢 Deployment
+To Netlify / Vercel / Surge
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Build the app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run build
 
-### Code Splitting
+    Upload the dist/ or build/ folder depending on your bundler.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👨‍💻 Developed By
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ayan Shrivastava & Harshal Bharatkar
+Built with ♥️ to digitize highway inspections and improve road safety.
