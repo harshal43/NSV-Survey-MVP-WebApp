@@ -34,7 +34,7 @@ const Login = () => {
       const res = await login(username, password);
       if (res.success) {
         // ✅ Save token to localStorage
-        localStorage.setItem("token", res.user.token);
+        // localStorage.setItem("token", res.user.token);
         localStorage.setItem("user", JSON.stringify(res.user));
         navigate('/dashboard');
       } else {
